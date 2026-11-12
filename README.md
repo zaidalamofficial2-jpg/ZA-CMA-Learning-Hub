@@ -1,58 +1,52 @@
 # ZA CMA Learning Hub
 
-An independent digital learning workspace for CMA students. The project is provided as a **single-page, self-contained HTML application** and can be hosted with GitHub Pages.
+**An independent digital learning platform for CMA students**  
+Created by **Zaid Alam**.
+
+## Live website
+
+After enabling GitHub Pages, add your published website URL here.
 
 ## Features
 
-- Student learning workspace and course navigation
-- Study resources and practice tools
-- Progress tracking saved in the browser
-- Theme preference support
-- AI teacher integration that requires the student to configure their own supported API credentials in the app settings
-- Browser-based storage using IndexedDB, with localStorage/memory fallback where supported
+- CMA learning dashboard and study progress tracking
+- Subject-wise learning and practice resources
+- MCQ practice, tests, results and revision tools
+- AI teacher/chat features
+- Study library, document tools, notes and flashcards
+- Light and dark themes
+- Responsive layout for mobile and desktop
+- Developer profile and contact links
 
-> **Important:** This repository contains the website front end. Browser-stored data (such as a student's progress and locally saved content) is not automatically shared between devices or users and is not included in GitHub. AI features may require a separately configured API key and may incur charges from the provider.
+## Publish or update on GitHub Pages
 
-## Run locally
+1. Open your GitHub repository.
+2. Upload `index.html` and `README.md` to the **root** of the repository.
+3. If GitHub asks whether to replace the existing files, confirm the replacement.
+4. Open **Settings → Pages**.
+5. Under **Build and deployment**, select **Deploy from a branch**.
+6. Select your publishing branch (usually `main`) and folder (`/root`), then save.
+7. Wait for GitHub Pages to finish deploying, then open the website URL shown in the Pages settings.
 
-1. Download or clone this repository.
-2. Open `index.html` in a modern browser.
-3. For the most reliable experience, serve the folder through a local web server rather than opening the file directly.
+`index.html` must remain in the repository root for this setup.
 
-Example using Python:
+## Important notes
 
-```bash
-python -m http.server 8000
-```
+- This is a single-page HTML application. The uploaded `index.html` includes the app's client-side code and bundled study-document data.
+- The app contains a browser-based local backend mode. Data saved in that mode is generally kept in that browser/device; it is not automatically shared or synchronized between students or devices.
+- Some AI features require an AI provider API key configured in the app's Settings. Treat API keys as private credentials. Do not publish a key in this repository, paste it into public posts, or share screenshots that reveal it.
+- GitHub Pages hosts static files only. If you later configure a separate server-based backend, that backend must be hosted separately and the frontend must be configured to communicate with it.
+- External services such as Google Fonts, PDF.js, and AI provider APIs require an internet connection and may be subject to their own availability, terms, and usage limits.
 
-Then visit `http://localhost:8000`.
+## Project files
 
-## Deploy with GitHub Pages
+| File | Purpose |
+|---|---|
+| `index.html` | Main website application |
+| `README.md` | Project information and GitHub Pages deployment guide |
 
-1. Create a GitHub repository.
-2. Upload `index.html` and `README.md` to the repository's root folder.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)` folder, then save.
-6. Wait for GitHub Pages to publish the site. Your website URL will appear in the Pages settings.
+## Credits
 
-## Updating the website
-
-Replace the repository's `index.html` with your latest version and commit the change. GitHub Pages will publish the update automatically after the deployment completes.
-
-## Security and privacy notes
-
-- Do not commit private API keys, passwords, student records, or other secrets to a public repository.
-- Anyone can view the source code of a public GitHub Pages website. A password screen in a browser-only HTML app should not be treated as server-side security.
-- User data stored in the browser remains in that browser unless the application provides a separate export or sync feature.
-
-## Project details
-
-- **Project:** ZA CMA Learning Hub
-- **Format:** Single-file HTML application
-- **Main entry point:** `index.html`
-- **Author credit in application:** Zaid Alam
-
-## Disclaimer
-
-This is an independent educational project and is not an official website of ICMA or any other professional accounting body. Course names, marks, and third-party services remain the property of their respective owners.
+**Project:** ZA CMA Learning Hub  
+**Developer:** Zaid Alam  
+**Email:** zaidalam.official2@gmail.com
